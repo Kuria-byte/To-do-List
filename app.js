@@ -12,7 +12,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-ian:34201440@cluster0-yz0bk.mongodb.net/toDolistDB", { useNewUrlParser: true });
+//I had to remove my credentials (username & password) before pushing this to the wild web
+mongoose.connect("mongodb+srv://admin-username:password@cluster0-fg0bk.mongodb.net/toDolistDB", { useNewUrlParser: true });
 
 // Create Item Schema
 const itemsSchema = {
@@ -80,7 +81,6 @@ app.get("/:customListName", function(req, res) {
                 res.redirect("/" + customListName);
             } else {
                 //Show an existing list
-
                 res.render("list", { listTitle: foundList.name, newListItems: foundList.items });
             }
         }
