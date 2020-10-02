@@ -2,7 +2,7 @@
 ![tofd](https://user-images.githubusercontent.com/61579772/94906913-e5805180-04d1-11eb-8d67-1d0589dfb094.jpg)
 A simple to-do List web app built using JS, Express & MongoDb
 
-##Live 
+## Live 
 - https://peaceful-brushlands-33076.herokuapp.com/
 
 ## How to use
